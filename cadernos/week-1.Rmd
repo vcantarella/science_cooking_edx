@@ -71,7 +71,173 @@ M_lye
 
 ```
 
+$CaCO_3(s)+ 2HCl_{(aq)} = CO_2(g) + H_2O_{(l)} + CaCl_2(aq)$
+$K_{eq} = \frac{\left[{CO}_2 \right] \left[{H_2O} \right] \left[{CaCl}_2 \right]}{\left[{CaCO}_3 \right] \left[{HCl} \right]^2}$
+
+
+You take a two antacid tablets, which together provide 1 gram total of calcium carbonate (CaCO3). (Most of the volume of the tablet is filler.) The molar molecular weight of CaCO3 is 100 g/mol. How many moles of CaCO3 are in your stomach? (Do not include the units in your answer.)
+
+```{r}
+m_Caco3 <- 1/100
+m_Caco3
+```
+
+Since you've just eaten, your stomach has approximately 500 mL of fluid in it. Assume the CaCO3 fully dissolves. What is the concentration of CaCO3 in your stomach? Give your answer in in mol/L (M), but do not include the units.
+
+```{r}
+M_Caco3 <- m_Caco3*(1/0.5)
+M_Caco3
+```
+
+How many moles of carbon dioxide gas (CO) will be produced when the antacid and your stomach acid react? Do not include the units in your answer.
 
 
 
+```{r}
+#The reaction indicates that if gone untill completion 1 mol antiacid will produce 1 mol CO2
+ph = 2.5
+M_h = 10^(-ph)
+
+M_hcl = M_h
+m_hcl = M_hcl*0.5
+m_hcl < m_Caco3
+
+#2m_hcl -> 1m_CO2
+
+m_CO2 = m_hcl/2
+m_CO2
+```
+
+Assume that, at body temperature, a mole of carbon dioxide gas occupies 24.4 L of volume. What is the volume of gas, in mililiters (mL), that will be produced in your stomach? Do not include the units in your answer.
+
+```{r}
+#1mol - 24.4
+#m_CO2 - x
+
+
+m_CO2*24.4*1000
+```
+
+##Chemical Reactions - Leavening Practice Problems
+
+Using a periodic table such as the one posted on the "Molar Mass and the Periodic Table" page or at WebElements, determine the molecular weight of each reactant in amu. Do not include the units in your answers.
+
+Molecular mass of baking soda (NaHCO3) in amu:
+
+```{r}
+24+1+12+3*16
+
+```
+
+ 
+Molecular mass of acetic acid (C2H4O2), the active component of vinegar, in amu:
+
+
+```{r}
+2*12+4*1+2*16
+```
+
+Baking soda and vinegar react according to the following chemical equation:
+
+${NaHCO}_3 + {C_2H_4O}_2 \rightarrow {CO}_2 + {H_2O} + {NaC_2H_3O}_2$
+
+Is this chemical equation already balanced?
+
+
+YES
+
+
+
+Determine how much vinegar would be needed to react with 9 grams (approximately 1 tbsp.) of baking soda by answering the following questions.
+
+How many moles of molecules of baking soda are in 9 grams of baking soda? Do not include the units in your answer.
+
+```{r}
+m_bs <- 9/85
+m_bs
+```
+
+ 
+How many moles of acetic acid are needed to fully react with the number of moles of baking soda in the recipe? Do not include the units in your answer.
+
+
+```{r}
+m_ac <- m_bs
+m_ac
+```
+  
+ 
+Commercial distilled vinegar is approximately 1 M acetic acid. How many mL of distilled vinegar are needed to fully react with the baking soda? Do not include the units in your answer.
+
+```{r}
+#1M = 1 mol/L
+
+V_vinegar<- m_ac
+V_vinegar*1000
+```
+
+ 
+True or false: If you ran out of baking soda, you could use lye (NaOH) to produce carbon dioxide gas instead.
+
+```{r}
+FALSE
+```
+
+Lye would produce water but no gas.
+
+Chocolate cake is a tasty dessert enjoyed by people all over the world. To achieve its texture and moisture, recipes for chocolate cake often call for eggs, milk, and butter. However, these three are animal products as well as known allergens for some people. Luckily for people who are averse to consuming these products, there are some tasty vegan varieties of chocolate cake such as Crazy Cake.
+
+The recipe for crazy cakes is as follows:
+
+1 1/2 cups flour (all-purpose)
+
+3 Tbsp. cocoa (unsweetened)
+
+1 cup sugar
+
+1 tsp. baking soda
+
+1/2 tsp.  salt
+
+1 tsp. white vinegar
+
+1 tsp.  pure vanilla extract
+
+5 Tbsp. vegetable oil 
+
+1 cup water
+
+Mix first 5 dry ingredients in a greased 8" square baking pan.  Make 3 depressions in the dry ingredients - two small, one larger. Pour vinegar into one of the smaller depressions, vanilla into the other, and the vegetable oil into the larger depression.  Pour water over all.  Mix well until smooth.
+
+Bake on middle rack of a pre-heated oven for 35 minutes.  Check with a toothpick to make sure it comes out clean.
+
+Vinegar is 5% acetic acid (CH3COOH) by weight. Using the information above, calculate how many moles of acetic acid are in this recipe.
+
+Other useful information: 1 tsp = 5 mL, density of vinegar = 1 g/mL.
+
+Enter the moles of acetic acid but without including the units:
+
+```{r}
+mass_vinegar <- 5 #grams
+mass_ac <- mass_vinegar*0.05
+m_ac <- mass_ac/60
+
+m_ac
+
+```
+
+What is the mass of baking soda (NaHCO3) necessary to react with all of the acetic acid? Give your answer in grams but don't include the units.
+
+```{r}
+
+m_bs = m_ac
+
+mass_bs = m_bs*85
+
+mass_bs
+```
+
+##Acids in Baking
+
+So if we know how much acid we have we can know how much gas will be produced and thus therefore combine everything together to 
 
