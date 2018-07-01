@@ -1,0 +1,91 @@
+---
+title: "Joanne Chang's Yellow Birthday Cake"
+output: html_notebook
+---
+
+Below is a list of the ingredients for Joanne Chang's yellow birthday cake as described in her cookbook, Flour. 
+
+$\frac{2}{3}$ cup buttermilk
+
+$1$ cup butter, softened
+
+$1\frac{1}{3}$ cups sugar
+
+$2$ large eggs (35g each)
+
+$\frac{2}{3}$ tsp. vanilla extract
+
+$2$ cups & all-purpose flour
+
+$\frac{1}{3}$ tsp. baking soda
+
+$\frac{2}{3}$ tsp. baking powder
+
+$2$ egg yolks
+
+$\frac{1}{3}$ tsp. salt
+
+
+
+
+How many moles of baking soda are contributed by the 1/3 tsp. baking soda in this recipe? Assume that the density of baking soda is 1 g/ml and the molecular weight of baking soda is 84g/mol. Give your answer in moles, but without entering the unit.
+
+```{r}
+(1/3)*5/84
+```
+
+
+##Moles of Baking Soda in Baking Powder
+
+Baking powder is stoichiometrically matched between baking soda and tartaric acid, and 1/3 of the mass of baking powder is baking soda -- this is because the molecular weight of cream of tartar is roughly twice that of baking soda. If the density of baking powder is 1 g/mL, compute the number of moles of baking soda that are contributed by the baking powder. Enter your answer as a number, without including units.
+
+
+```{r}
+
+(2/3)*5*(1/3)/84
+
+
+```
+
+Moles of Carbon Dioxide
+
+Assuming that all of the baking soda reacts with the acid in this recipe, how many moles of CO2 will be produced in this recipe? Enter your answer as a number, without including units.
+
+
+
+```{r}
+#1 mol of baking soda -> 1 mol of co2
+m_CO2 <- ((1/3)*5/84)+((2/3)*5*(1/3)/84)
+
+((1/3)*5/84)+((2/3)*5*(1/3)/84)
+m_CO2
+
+
+```
+
+If 1 mole of gas occupies 22.4 liters of space, how many liters of CO2 does this correspond to?
+
+```{r}
+m_CO2*22.4
+```
+
+
+##Baker's Ammonia
+
+As we've seen, there are a number of factors that can leaven a cake. In particular, we've talked about chemical leaveners, especially baking soda, which reacts with an acid to produce carbon dioxide gas. There are other chemical leaveners as well, which can also react to produce gas that contributes to a cake's rise.
+Baker’s Ammonia is an old precursor to modern leaveners and is still used in some traditional recipes. The reaction of baker’s ammonia, which is ammonium carbonate is:
+
+(NH4)2CO3(s) → NH4HCO3(s) + NH3(g)
+
+Additionally, the product of this reaction includes ammonium bicarbonate, which can react further when heated during baking:
+
+NH4HCO3(s) → NH3(g) + H2O(l) + CO2(g)
+
+You can combine these two equations to show the complete reaction of baker’s ammonia during baking:
+
+(NH4)2CO3 → 2NH3 + H2O + CO2
+
+Per molecule, which releases more gas, baker’s ammonia or baking soda? (i.e. which, per molecule, is a better leavener?)
+
+
+Answer: Baker's Ammonia because it will produce 2 mols of ammonia and 1 mol of CO2, or 3 mols of gas, compared to baking soda, which produces only 1 mol of CO2 per mol.

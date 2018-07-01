@@ -1,0 +1,48 @@
+---
+title: "Lab - Tollhouse cookie"
+output: html_notebook
+---
+
+PROBLEM 3: NESTLE TOLL HOUSE CHOCOLATE CHIP COOKIES
+
+The following questions concern the iconic Nestle Toll House Chocolate Chip Cookie recipe, shown below:
+
+ORIGINAL NESTLE TOLLHOUSE CHOCOLATE CHIP COOKIES
+
+2 1/4 cups all- purpose flour
+
+1 tsp. baking soda
+
+1 tsp. salt
+
+1 cup (2 sticks) butter or margarine, softened
+
+3/4 cup granulated sugar
+
+3/4 cup packed brown sugar
+
+1 tsp. vanilla extract
+
+2 large eggs
+
+2 cups NESTLE TOLLHOUSE  Semi-Sweet Chocolate Morsels
+
+1 cup chopped nuts
+
+How much glutenin?
+Glutenin (molecular weight: 75,000 g/mol) makes up ~60% of the protein in all-purpose flour. Assuming that all-purpose flour is 10% protein by weight, about how many molecules of glutenin are in this recipe? According to WolframAlpha, the density of flour is 0.59 g/mL.
+
+```{r}
+#1 cup = 236.588 ml
+
+mass_flour = 236.588*2.25*0.59
+protein_mass = 0.1*mass_flour
+
+glutenin_mass =0.6*protein_mass
+
+(glutenin_mass/75000)*6.02*10^23
+```
+
+
+
+
